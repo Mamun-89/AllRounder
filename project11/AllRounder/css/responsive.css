@@ -1,0 +1,265 @@
+/*  */
+@media only screen and (min-width: 200px) and (max-width: 1062px) {
+    header > .container > .left{
+        font-size:14px;
+    }
+    header > .container > .search-area > form{
+        padding:2px 5px;
+    }
+    header > .navbar{
+        padding:0 20px;
+    }
+    header > .navbar > .logo > h2{
+        font-size:1rem;
+    }
+    header > .navbar > .logo > p{
+        font-size: 10px;
+    }
+    header > .navbar > .main-menu > .menu-list > .menu-item > a{
+        font-size:14px;
+    }
+    header > .navbar > .main-menu > .menu-list > .menu-item > a::before {
+        font-size:8px;
+    }
+    .qotes{
+        font-size:20px;
+    }
+    .card-wrapper > .card > .content > h3{
+        font-size:17px;
+    }
+    .card-wrapper > .card > .content > p{
+        font-size:13px;
+    }
+    .another > .read > .lorem > p{
+        font-size:17px;
+    }
+    .another > .read > .lorem > a{
+        font-size:14px;
+    }
+    .another > .read > .read2 > .blog1 > .img{
+        height: 30px;
+    }
+    .another > .read > .read2 > .blog1 > .content > h3{
+        font-size:16px;
+    }
+    .another > .read > .read2 > .blog1 > .content > p{
+        font-size:11px;
+    }
+    .another > .admin > .lorem > p{
+        font-size:17px;
+    }
+    .another > .admin > .lorem > a{
+        font-size:14px;
+    }
+    .another > .admin > .admin-image > .img-card > p span{
+        font-size:17px;
+    }
+    .another > .admin > .admin-image > .img-card > p{
+        font-size:13px;
+    }
+    .another > .admin > .admin-image > .img-card > a{
+        font-size:13px;
+    }
+    footer h3{
+        font-size:17px;
+    }
+    footer >.left> .about > p{
+        font-size:13px;
+    }
+    footer >.left> .link-blocks > ul > li > a{
+        font-size:14px;
+    }
+    footer >.right> .form-blog > .post > h5{
+        font-size:15px;
+    }
+    footer >.right> .form-blog > .post > .date{
+        font-size:12px;
+    }
+    footer >.right> .form-blog > .post > p{
+        font-size:13px;
+    }
+    footer >.right> .contact > p{
+        font-size:13px;
+    }
+    footer >.right> .contact > .news{
+        font-size:17px;
+    }
+    footer >.right> .contact > form input{
+        font-size:13px;
+    }
+    footer >.right> .contact > button{
+        font-size:17px;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 768px){
+    header > .container{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    header > .navbar >.main-menu> .mobile-Menu{
+        position: relative;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height:35px;
+        width:40px;
+        /* background: red; */
+        cursor: pointer;
+        /* border:2px solid#fff; */
+
+    }
+    header > .navbar >.main-menu> .mobile-Menu .bar1{
+        height:3px;
+        width:35px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow:0 2px 5px rgba(255, 101, 47, 0.2);
+        transition: all 0.3s ease-in-out;
+    }
+    header > .navbar >.main-menu> .mobile-Menu .bar2,
+    header > .navbar >.main-menu> .mobile-Menu .bar3{
+        content:"";
+        position: absolute;
+        width:35px;
+        height: 3px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow:0 2px 5px rgba(255, 101, 47, 0.2);
+        transition: all 0.3s ease-in-out;
+    }
+    header > .navbar >.main-menu> .mobile-Menu .bar2{
+        transform: translateY(-10px);
+    }
+    header > .navbar >.main-menu> .mobile-Menu .bar3{
+        transform:translateY(10px)
+    }
+    /* Animation */
+    header > .navbar >.main-menu> .mobile-Menu.open> .bar1{
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+
+    }
+    header > .navbar >.main-menu> .mobile-Menu.open> .bar2{
+
+        transform:rotate(45deg) ;
+    }
+    header > .navbar >.main-menu> .mobile-Menu.open> .bar3{
+        transform: rotate(-45deg) ;
+    }
+    header > .navbar > .main-menu{
+        display:block;
+    }
+    header > .navbar > .main-menu>.menu-list{
+        display: none;
+    }
+    header > .navbar > .main-menu>.menu-list.openMenuList{
+        display:block;
+        position: absolute;
+        flex-flow: column;
+        right: 0;
+        width: 200px;
+        height: 64vh;
+        margin-top:8px;
+        z-index: 2;
+        top: auto;
+        background: blueviolet;
+    }
+    header > .navbar > .main-menu > .menu-list > .menu-item > a{
+        font-size: 15px;
+    }
+    header > .navbar > .main-menu > .menu-list > .menu-item > a::after{
+        display: none;
+    }
+    header > .navbar > .main-menu > .menu-list > .menu-item > a::before {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background: cadetblue;
+    }
+    header > .navbar > .main-menu > .menu-list > .menu-item > .sub-menu{
+        top: 30px;
+        right: 12px;
+        background: #60008b85;
+    }
+    header > .navbar > .main-menu > .menu-list > .menu-item > .sub-menu > .menu-item{
+        margin: 0;
+    }
+    header > .navbar > .main-menu > .menu-list > .menu-item > .sub-menu > .menu-item > a{
+        font-size: 15px;
+        padding:0;
+    }
+    
+    .card-wrapper{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-wrapper > .card{
+        width: 200px;
+    }
+    .card-wrapper > .card > .content > p {
+        line-height: 1.2;
+        margin-bottom: 5px;
+    }
+    .card-wrapper > .card::after{
+        bottom: -8px;
+    }
+    .another{
+        flex-wrap: wrap;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    footer > .left{
+        gap: inherit;
+    }
+    footer > .right{
+        gap: inherit;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 380px){
+    .card-wrapper > .card{
+        width: 100%;
+    }
+    .another > .read > .read2 > .blog1 > .content > h3{
+        font-size:12px;
+    }
+    .another > .read > .read2 > .blog1 > .content > p{
+        font-size:9px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 300px){
+    .another > .read > .lorem{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .another > .read > .read2{
+        flex-wrap: wrap;
+    }
+    .another > .admin > .lorem{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .another > .admin > .admin-image > .img-card > p{
+        font-size:10px;
+    }
+    .another > .admin > .admin-image > .img-card > p span{
+        font-size:13px;
+    }
+    .another > .admin > .admin-image > .img-card > a{
+        font-size: 13px;
+    }
+    footer > .left{
+        flex-wrap: wrap;
+    }
+    footer > .right{
+        flex-wrap: wrap;
+    }
+}
